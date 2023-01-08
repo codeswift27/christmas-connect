@@ -375,7 +375,7 @@ class LevelView: SKScene {
             path.addLine(to: CGPoint(x: location.x, y: location.y - 10))
         }
         // Add line to current touch location
-        path.addLine(to: CGPoint(x: currentLocation.x, y: currentLocation.y - 10))
+        path.addLine(to: currentLocation)
         // Update line path
         line.path = path
     }
